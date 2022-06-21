@@ -1,0 +1,8 @@
+type Transfer @entity {
+  id: ID! # id field is always required and must look like this
+  block_number: BigInt # The block height of the transfer
+  from_account: String! # The account that transfers are made from
+  to_account: String! # The account that transfers are made to
+  balance_change: BigInt # Amount Balance that is transferred
+  timestamp: Date! # Time when balance is transferred
+}
